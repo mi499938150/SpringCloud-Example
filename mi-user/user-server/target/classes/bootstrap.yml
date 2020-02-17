@@ -1,0 +1,54 @@
+USER:   #客户端声明
+  ribbon:
+   NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+server:
+  port: 9001
+  servlet:
+    context-path: /mi-user
+spring:
+  application:
+    name: user
+#  cloud:
+#    config:
+#      discovery:
+#        enabled: true
+#        service-id: CONFIG
+#      profile: dev
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate.format_sql: true
+    open-in-view: false
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: 123456
+      url: jdbc:mysql://127.0.0.1:3306/scloud?characterEncoding=utf-8&useSSL=false
+  # 开启zipkin追踪
+  zipkin:
+    base-url: http://zipkin:9411/
+    sender:
+      type: web
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+
+# 声明Feign
+feign:
+  hystrix:
+    enabled: true
+
+# #开启监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+
+logging:
+  level:
+    org.springframework.cloud.openfeign: debug

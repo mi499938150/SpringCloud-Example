@@ -1,0 +1,32 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: mi-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+
+# 网关转发
+zuul:
+  prefix: /gateway  #访问前缀
+  routes:   #支付单个微服务的转发
+    appoint:
+      path: /mi-appoint/**   #需要转发微服务的工程path
+      serviceId: appoint   #application:name
+      strip-prefix: false  #不做前缀配置
+#    #127.0.0.1:9000/gateway/mi-appoint/appoint/list
+#
+    user:
+      path: /mi-user/**
+      serviceId: user
+      strip-prefix: false
+#      sensitive-headers:  单独服务
+  sensitive-headers: #全部服务忽略敏感头(全部服务都可以传递cookie)
+#      #127.0.0.1:9000/gateway/mi-user/login/
+
+
+ribbon:
+  ReadTimeout: 5000
+  SocketTimeout: 5000

@@ -1,0 +1,22 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mi499938150/config-repo.git
+          username: mi499938150
+          password: a33651266
+          basedir: D:\Program Files\config\basefir
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude: "*"

@@ -1,0 +1,39 @@
+
+server:
+  port: 9002
+  servlet:
+    context-path: /mi-appoint
+spring:
+  application:
+    name: appoint
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG
+      profile: dev
+  redis:
+    host: 127.0.0.1
+    port: 6379
+      #localhst/config/{name}->application  - {profile} -> dev
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: none
+#    properties:
+#      hibernate.format_sql: true
+#    open-in-view: true
+#    database-platform: org.hibernate.dialect.MySQL5Dialect
+#  datasource:
+#      driver-class-name: com.mysql.jdbc.Driver
+#      username: root
+#      password: 123456
+#      url: jdbc:mysql://127.0.0.1:3306/scloud?serverTimezone=GMT%2B8
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+
+logging:
+  level:
+    org.springframework.cloud.openfeign: debug

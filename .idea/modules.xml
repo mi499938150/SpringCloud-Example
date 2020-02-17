@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Spring-Coud-Example.iml" filepath="$PROJECT_DIR$/Spring-Coud-Example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mi-appointment/appointment-client/appointment-client.iml" filepath="$PROJECT_DIR$/mi-appointment/appointment-client/appointment-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mi-appointment/appointment-server/appointment-server.iml" filepath="$PROJECT_DIR$/mi-appointment/appointment-server/appointment-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mi-appointment/mi-appointment.iml" filepath="$PROJECT_DIR$/mi-appointment/mi-appointment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mi-common/mi-common.iml" filepath="$PROJECT_DIR$/mi-common/mi-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mi-config/mi-config.iml" filepath="$PROJECT_DIR$/mi-config/mi-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mi-eureka/mi-eureka.iml" filepath="$PROJECT_DIR$/mi-eureka/mi-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mi-geteway/mi-geteway.iml" filepath="$PROJECT_DIR$/mi-geteway/mi-geteway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mi-user/mi-user.iml" filepath="$PROJECT_DIR$/mi-user/mi-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mi-user/user-server/user-server.iml" filepath="$PROJECT_DIR$/mi-user/user-server/user-server.iml" />
+    </modules>
+  </component>
+</project>

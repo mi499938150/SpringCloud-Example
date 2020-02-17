@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="appointment-client" />
+        <module name="appointment-server" />
+        <module name="mi-common" />
+        <module name="mi-config" />
+        <module name="mi-eureka" />
+        <module name="mi-geteway" />
+        <module name="user-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="appointment-client" target="1.8" />
+      <module name="appointment-server" target="1.8" />
+      <module name="mi-appointment" target="1.8" />
+      <module name="mi-common" target="1.8" />
+      <module name="mi-config" target="1.8" />
+      <module name="mi-eureka" target="1.8" />
+      <module name="mi-geteway" target="1.8" />
+      <module name="mi-service" target="1.8" />
+      <module name="mi-user" target="1.8" />
+      <module name="Spring-Coud-Example" target="1.8" />
+      <module name="user-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

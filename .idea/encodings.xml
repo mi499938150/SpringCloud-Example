@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mi-appointment" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mi-appointment/appointment-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mi-appointment/appointment-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mi-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mi-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mi-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mi-geteway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mi-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mi-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mi-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mi-user/user-server" charset="UTF-8" />
+  </component>
+</project>
